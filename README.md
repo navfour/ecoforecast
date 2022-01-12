@@ -1,12 +1,14 @@
 # EcoForecast: An interpretable data-driven approach for short-term macroeconomic forecasting using N-BEATS neural network
 
-To some extent, EcoForecast can balance the effectiveness, the efficiency, the generalizability and the interpretability while the conditions such as forecast frequency and time window changed, even unexpected incidents happened. Based on the actual macroeconomic data for China from 1995 to 2021, experimental results indicated that EcoForecast improved the accuracy up to 4.52 times compared with the traditional BVAR. In the robustness test, EcoForecast requires only a quarter of the data to achieve 2.62 times minor forecast errors of the BVAR. Our findings provide a new possible research direction for short-term macroeconomic forecasting.
-
+We propose a macroeconomic forecasting model EcoForecast based on NBEATS and select macroeconomic data to verify the model performance. You can open the related data in the `./data`.
+The dataset includes Gross Domestic Product (GDP) with a quarterly cycle , Purchasing Manager's Index (PMI) with a monthly cycle , National electricity generation (ELECT) with a monthly cycle . The three groups of data are composed of three column fields, "Unique_ID" indicates the type of data, "ds" indicates the time, and "y" indicates the value of GDP/PMI/ELECT.
+In addition, EcoForecast is interpretable and can be used to observe the change of forecast results under different economic up or down assumptions through different economic constraints such as Seasonal, Trend, and Generic.
+To facilitate verification, we have rewrapped the training function's hyperparameters, and the robustness of the model can be verified by adjusting different block structures and sliding window structures with configuration parameters in `GDPexample.py `. Of course, you can still configure other parameters like epochs in `config_function.py `
 ### From PyPI
-you can also use `pip install ecoforecast`
+You can also use `pip install ecoforecast`
 
 ## License
 This project is licensed under the MIT License - see the LICENSEfile for details.
 
 ## Example
-you can just use `GDPexample.py` or install the `ecoforecast` package
+You can just use `GDPexample.py` or install the `ecoforecast` package
