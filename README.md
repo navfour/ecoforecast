@@ -6,7 +6,7 @@ You can verify our model by real macroeconomic data in China, where you can open
 
 EcoForecast's interpretable decomposition result is consistent with the actual economics practice in China, which can analyze the dominant terms in economic change, providing intuition for further research.
 
-You can observe the changes in model performance by manually tuning EcoForecast's block type and sliding window structures with configuration parameters in GDPexample.py, where we have rewrapped the model's hyperparameters.
+You can observe the changes in model performance by manually tuning EcoForecast's block type and sliding window structures with configuration parameters in `GDPexample.py`, where we have rewrapped the model's hyperparameters.
 
 ### Experiment
 
