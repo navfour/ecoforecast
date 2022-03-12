@@ -37,6 +37,3 @@ The related code has been packaged and uploaded to PIpy
 you can also use `pip install ecoforecast`
 
 
-## Citation
-
-If you use EcoForecast, please cite the following paper:
