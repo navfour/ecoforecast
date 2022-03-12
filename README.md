@@ -32,7 +32,7 @@ you can directly use `GDPexample.py` or install the `ecoforecast` package
 
 In `GDPexample.py`, you can quickly compare the performance of EcoForecast in different structures and different data sets by replacing datasets we had encapsulated experiments with different structures
 ### From PIPY
-The related code has been packaged and uploaded to PIpy
+The related code has been packaged and uploaded to PIPY
 
 you can also use `pip install ecoforecast`
 
