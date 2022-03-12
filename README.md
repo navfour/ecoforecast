@@ -37,9 +37,6 @@ The related code has been packaged and uploaded to PIpy
 you can also use `pip install ecoforecast`
 
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/cchallu/nbeatsx/blob/main/LICENCE) file for details.
-
 ## Citation
 
 If you use EcoForecast, please cite the following paper:
