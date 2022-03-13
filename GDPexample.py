@@ -1,5 +1,5 @@
 import pandas as pd
-from config_function import start
+from ecoforest.config_function import start
 
 Y_df = pd.read_csv('data/GDP.csv', encoding='utf-8')
 
@@ -18,14 +18,14 @@ result_end.reset_index(drop=True, inplace=True)
 # --------
 # -------验证STG的结构
 # STG,SGT,TGS,TSG,GTS,GST,STGG,TSGG
-windows_size = 12
+
 dict_n_blocks = [
-    # [['seasonality'] + ['trend'] + ['identity'], [1, 1, 5], ['STG']],
-    # [['seasonality'] + ['identity'] + ['trend'], [1, 5, 1], ['SGT']],
-    # [['trend'] + ['identity'] + ['seasonality'], [1, 5, 1], ['TGS']],
-    # [['trend'] + ['seasonality'] + ['identity'], [1, 1, 5], ['TSG']],
-    # [['identity'] + ['trend'] + ['seasonality'], [5, 1, 1], ['GTS']],
-    # [['identity'] + ['seasonality'] + ['trend'], [5, 1, 1], ['GST']],
+    [['seasonality'] + ['trend'] + ['identity'], [1, 1, 5], ['STG']],
+    [['seasonality'] + ['identity'] + ['trend'], [1, 5, 1], ['SGT']],
+    [['trend'] + ['identity'] + ['seasonality'], [1, 5, 1], ['TGS']],
+    [['trend'] + ['seasonality'] + ['identity'], [1, 1, 5], ['TSG']],
+    [['identity'] + ['trend'] + ['seasonality'], [5, 1, 1], ['GTS']],
+    [['identity'] + ['seasonality'] + ['trend'], [5, 1, 1], ['GST']],
     [['seasonality'] + ['trend'] + ['identity'], [1, 1, 10], ['STGG']],
     [['trend'] + ['seasonality'] + ['identity'], [1, 1, 10], ['TSGG']],
 ]
@@ -36,8 +36,9 @@ for blok_stack in dict_n_blocks:
     n_blocks = blok_stack[1]
     nblock_name = blok_stack[2]
     for windows_size in windows_sizes:
-        result_df, result_predict = start( Y_df, windows_size, stack_types, n_blocks)
+        result_df, result_predict = start(Y_df, windows_size, stack_types, n_blocks)
         ser = pd.DataFrame(result_predict.tolist(), columns=[str(nblock_name[0]) + '_' + str(windows_size)])
         result_end = result_end.join(ser, lsuffix='_block', rsuffix='_result')
-        result_end.to_csv('results/result.csv')
+        result_end.to_csv('results/result-GDP.csv')
+        result_df.to_csv('results/result-block_{}.csv'.format(str(nblock_name[0]) + '_' + str(windows_size)))
 # --------------------------------------------------------------

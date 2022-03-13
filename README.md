@@ -27,7 +27,7 @@ We tested the performance of EcoForecast under different structural and data con
 ### Datasets
 `GDP` data covers 30 years **from the first quarter of 1992 to the fourth quarter of 2021**, with 120 pieces updated quarterly. The `PMI` covers 16 years of data **from June 2005 to December 2021**, with 204 items updated monthly. `ELECT` covers 32 years of data **from June 1990 to December 2021**, with 375 updates monthly.
 
-## usage
+## Usage
 you can directly use `GDPexample.py` or install the `ecoforecast` package
 
 In `GDPexample.py`, you can quickly compare the performance of EcoForecast in different structures and different data sets by replacing datasets we had encapsulated experiments with different structures

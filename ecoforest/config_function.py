@@ -9,16 +9,11 @@
 
 # In[1]:
 
-
-import torch
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
-from src.utils.data.datasets.epf import EPF, EPFInfo
-from src.utils.pytorch.ts_dataset import TimeSeriesDataset
-from src.utils.pytorch.ts_loader import TimeSeriesLoader
-from src.nbeats.nbeats import Nbeats
+from .src.utils.pytorch.ts_dataset import TimeSeriesDataset
+from .src.utils.pytorch.ts_loader import TimeSeriesLoader
+import numpy as np
+from .src.nbeats.nbeats import Nbeats
 
 
 # This notebook presents an example on how to use the NBEATSx model, including the Dataset and Loader objects which comprise our full pipeline. We will train the model to forecast the last available week of the NP market described in the paper.
@@ -34,7 +29,7 @@ def start( Y_df, windows_size, stack_types, n_blocks):
     X_df = Y_df.iloc[:, [0, 1]]
 
     train_mask = np.ones(len(Y_df))
-    train_mask[-int(0.2 * len(Y_df))] = 0  # Last week of data (168 hours)
+    train_mask[-int(0.1 * len(Y_df)):] = 0  # Last week of data (168 hours)
     val_mask = np.zeros(len(Y_df))
 
     # Dataset object. Pre-process the DataFrame into pytorch tensors and windows.
@@ -96,8 +91,8 @@ def start( Y_df, windows_size, stack_types, n_blocks):
                    n_blocks=n_blocks,
                    n_layers=[3, 3, 3],
                    n_hidden=[[512, 512, 512], [512, 512, 512], [512, 512, 512]],
-                   n_harmonics=0,  # not used with exogenous_tcn
-                   n_polynomials=0,  # not used with exogenous_tcn
+                   n_harmonics=1,  # not used with exogenous_tcn
+                   n_polynomials=2,  # not used with exogenous_tcn
                    x_s_n_hidden=0,
                    exogenous_n_channels=windows_size,
                    include_var_dict=include_var_dict,
@@ -126,7 +121,7 @@ def start( Y_df, windows_size, stack_types, n_blocks):
     # y_true, y_hat, *_ = model.predict(ts_loader=val_loader, return_decomposition=False)
     y_true, y_hat, block_forecasts, *_ = model.predict(ts_loader=predict_loader, return_decomposition=True)
 
-    data = block_forecasts.reshape((len(Y_df) - 1), 12, 1).mean(axis=2)
+    data = block_forecasts.reshape((len(Y_df) - 1), sum(n_blocks), 1).mean(axis=2)
     result = pd.DataFrame(data)
     result_all = y_hat.mean(axis=1)
     result_true = y_true.mean(axis=1)
