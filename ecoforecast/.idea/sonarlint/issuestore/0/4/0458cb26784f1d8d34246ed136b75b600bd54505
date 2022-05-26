@@ -1,11 +1,0 @@
-
-gpython:S117"PRename this parameter "S_df" to match the regular expression ^[_a-z][a-z0-9_]*$.(ŒÎ«ö
-gpython:S117"PRename this parameter "X_df" to match the regular expression ^[_a-z][a-z0-9_]*$.(´§¡
-gpython:S117"PRename this parameter "Y_df" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÎÒ‰Ù
-rpython:S117b"VRename this local variable "S_col" to match the regular expression ^[_a-z][a-z0-9_]*$.(‹óë«ùÿÿÿÿ
-spython:S117J"WRename this local variable "S_cols" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÑÛàĞùÿÿÿÿ
-lpython:S117?"PRename this parameter "S_df" to match the regular expression ^[_a-z][a-z0-9_]*$.(¹şÎÚÿÿÿÿÿ
-rpython:S117["VRename this local variable "X_col" to match the regular expression ^[_a-z][a-z0-9_]*$.(æâ–úÿÿÿÿ
-npython:S117E"WRename this local variable "X_cols" to match the regular expression ^[_a-z][a-z0-9_]*$.(ƒÕû
-lpython:S117?"PRename this parameter "X_df" to match the regular expression ^[_a-z][a-z0-9_]*$.(¹şÎÚÿÿÿÿÿ
-lpython:S117?"PRename this parameter "Y_df" to match the regular expression ^[_a-z][a-z0-9_]*$.(¹şÎÚÿÿÿÿÿ

@@ -1,21 +1,0 @@
-
-bpython:S1854."JRemove this assignment to local variable 'gamma'; the value is never used.(»™§
-ipython:S117"MRename this parameter "Z" to match the regular expression ^[_a-z][a-z0-9_]*$.(øˆí§ùÿÿÿÿ
-lpython:S1171"URename this local variable "Zlag" to match the regular expression ^[_a-z][a-z0-9_]*$.(ş‹¯
-mpython:S1542"PRename function "Newey_West" to match the regular expression ^[a-z_][a-z0-9_]*$.(øˆí§ùÿÿÿÿ
-npython:S1542="QRename function "GW_CPA_test" to match the regular expression ^[a-z_][a-z0-9_]*$.(œ¢¶øÿÿÿÿ
-Mpython:S1481}"0Remove the unused local variable "av_diff_loss".(”—ˆüÿÿÿÿ
-opython:S117¤"WRename this local variable "GWstat" to match the regular expression ^[_a-z][a-z0-9_]*$.(¯ö«
-Fpython:S1481§"(Remove the unused local variable "zbar".(ßĞêıÿÿÿÿ
-Bpython:S1481¨")Remove the unused local variable "nlags".(Ş£É«
-epython:S1763§"GDelete this unreachable code or refactor the code to make it reachable.(ßĞêıÿÿÿÿ
-<python:S125Ÿ"Remove this commented out code.(Üœ†Şúÿÿÿÿ
-7python:S125¬"Remove this commented out code.(»±ûœ
-<python:S125³"Remove this commented out code.(ØèÜüÿÿÿÿ
-7python:S125À"Remove this commented out code.(Âü‘
-<python:S125Â"Remove this commented out code.(òë×”şÿÿÿÿ
-7python:S125É"Remove this commented out code.(¸°
-<python:S125Í"Remove this commented out code.(äëùÿÿÿÿ
-7python:S125Ò"Remove this commented out code.(Âü‘
-qpython:S1542Ú"XRename function "plot_GW_test_pvals" to match the regular expression ^[a-z_][a-z0-9_]*$.(¾“Ø«
-@python:S1481ã"'Remove the unused local variable "fig".(Ã¦Ò“

@@ -1,11 +1,0 @@
-
-@python:S108&")Either remove or fill this block of code.(ã‘Û¾
-ipython:S1073"MMethod "__init__" has 31 parameters, which is greater than the 13 authorized.(ÄÁšÃşÿÿÿÿ
-mpython:S3776Ø"TRefactor this function to reduce its Cognitive Complexity from 27 to the 15 allowed.(ùºâ
-[python:S112ç">Replace this generic exception class with a more specific one.(ûÑ˜×ûÿÿÿÿ
-[python:S112ú">Replace this generic exception class with a more specific one.(ûÑ˜×ûÿÿÿÿ
-Bpython:S1481¿")Remove the unused local variable "epoch".(÷Ù¿è
-Bpython:S1481Á")Remove the unused local variable "epoch".(š…ÇÇ
-mpython:S3776‘"TRefactor this function to reduce its Cognitive Complexity from 48 to the 15 allowed.(øëò
-<python:S125Â"Remove this commented out code.(ÑéŞ¶şÿÿÿÿ
-opython:S117š"RRename this parameter "X_test" to match the regular expression ^[_a-z][a-z0-9_]*$.(ŒÿÀ¼ûÿÿÿÿ
