@@ -12,13 +12,13 @@ You can observe the changes in model performance by manually tuning EcoForecast'
 
 We tested the performance of EcoForecast under different structural and data constraints, where the accuracy was significantly higher than that of traditional methods. The following table shows the prediction error of EcoForecast under different sliding window sizes and model architecture.
 
-|         |  STG |  SGT |  TGS |  TSG |  GTS |  GST | STGG | TSGG |
-|:--------|------|------|------|------|------|------|------|------|
-| 3       |0.0149|0.0100|0.0137|0.0100|0.0083|0.0098|0.0101|0.0103|
-| 6       |0.0062|0.0079|0.0070|0.0075|0.0052|0.0072|0.0071|0.0069|
-| 9       |0.0111|0.0098|0.0113|0.0101|0.0102|0.0115|0.0107|0.0103|
-| 12      |0.0124|0.0122|0.0125|0.0132|0.0111|0.0120|0.0135|0.0121|
-| 15      |0.0140|0.0129|0.0149|0.0127|0.0139|0.0114|0.0141|0.0171|
+    |         |  STG |  SGT |  TGS |  TSG |  GTS |  GST | STGG | TSGG |
+    |:--------|------|------|------|------|------|------|------|------|
+    | 3       |0.0130|0.0184|0.0101|0.0089|0.0102|0.0111|0.0100|0.0093|
+    | 6       |0.0072|0.0051|0.0070|0.0070|0.0066|0.0060|0.0059|0.0043|
+    | 9       |0.0102|0.0091|0.0094|0.0100|0.0076|0.0061|0.0110|0.0127|
+    | 12      |0.0123|0.0143|0.0134|0.0175|0.0142|0.0113|0.0107|0.0120|
+    | 15      |0.0156|0.0123|0.0145|0.0151|0.0135|0.0129|0.0141|0.0188|
 
 
 ![image](https://raw.githubusercontent.com/navfour/ecoforecast/main/img/img1.svg)
