@@ -21,7 +21,7 @@ We tested the performance of EcoForecast under different structural and data con
 | 15      |0.0140|0.0129|0.0149|0.0127|0.0139|0.0114|0.0141|0.0171|
 
 
-![image](https://raw.githubusercontent.com/navfour/ecoforecast/main/img/img1.png)
+![image](https://raw.githubusercontent.com/navfour/ecoforecast/main/img/img1.svg)
 
 
 ### Datasets
