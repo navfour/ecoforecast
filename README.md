@@ -8,6 +8,9 @@ EcoForecast's interpretable decomposition result is consistent with the actual e
 
 You can observe the changes in model performance by manually tuning EcoForecast's block type and sliding window structures with configuration parameters in `GDPexample.py`, where we have rewrapped the model's hyperparameters.
 
+#####This repository provides an implementation of the NBEATSx algorithm introduced in 
+[https://arxiv.org/pdf/2104.05522.pdf].
+
 ### Experiment
 
 We tested the performance of EcoForecast under different structural and data constraints, where the accuracy was significantly higher than that of traditional methods. The following table shows the prediction error of EcoForecast under different sliding window sizes and model architecture.
